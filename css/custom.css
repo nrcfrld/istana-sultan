@@ -70,11 +70,74 @@
   letter-spacing: 1.8px;
   font-size: 14px;
   margin-top: 8px;
+  outline: none;
+  border: #d19704;
 }
 
 .btn-cta:hover {
   background-color: #d19704;
   color: white;
+}
+
+.card-product-features {
+  /* position: absolute;
+  top: -120px; */
+  margin-top: -300px;
+  width: 100%;
+  left: 0;
+  background-color: transparent !important;
+  display: block;
+  border: 0;
+}
+
+.panel-hero {
+  border-radius: 36px;
+}
+
+.panel-hero-item {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.panel-hero-item img {
+  width: 80px;
+  height: 80px;
+}
+
+.custom-step-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.custom-step-list .custom-step-list-item {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.custom-step-list .custom-step-list-item .number {
+  background-color: #f7b101;
+  color: white;
+  font-weight: 600;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 58px;
+  height: 58px;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.custom-step-list .custom-step-list-item {
+  font-size: 18px;
+  color: white;
+}
+
+.bg-gray {
+  background-color: #f5f5f5;
 }
 
 @media only sceen and (min-width: 768px) {
