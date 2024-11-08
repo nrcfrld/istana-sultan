@@ -140,6 +140,25 @@
   background-color: #f5f5f5;
 }
 
+.overlay-section {
+  margin-top: -180px;
+  position: relative;
+  z-index: 1;
+}
+
+.bg-is-black {
+  background-color: #242426;
+}
+
+.bg-is-black-2 {
+  background-color: #3b3b3b !important;
+}
+
+.form-select,
+.form-control {
+  padding: 0.55rem 2.25rem 0.55rem 0.75rem;
+}
+
 @media only sceen and (min-width: 768px) {
   .section-label {
     padding: 24px 64px;
