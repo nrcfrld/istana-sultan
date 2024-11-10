@@ -3062,7 +3062,7 @@ input[type="radio"]:checked + label span:after {
   border-radius: 0;
   text-transform: uppercase;
   width: auto;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
 .btn.active.focus,
