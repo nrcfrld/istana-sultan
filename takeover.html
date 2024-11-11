@@ -303,35 +303,97 @@
         <div class="row py-5">
           <div class="col-md-6 col-lg-4 mb-3">
             <h3 class="text-black title-small-2">Simulasi Take Over</h3>
-            <div class="d-flex flex-column gap-3 mt-5">
-              <div class="bg-dark text-white rounded-4 text-end px-4 py-3">
-                <a href="" class="text-white text-lg">Passenger Car</a>
-              </div>
-              <div class="rounded-4 text-end px-4 py-3">
-                <a href="" class="text-dark text-lg">Commercial Car</a>
-              </div>
+            <div
+              class="nav flex-column nav-pills mt-5"
+              id="v-pills-tab"
+              role="tablist"
+              aria-orientation="vertical"
+            >
+              <button
+                class="nav-link nav-link-custom text-end rounded-3 active"
+                id="v-pills-home-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-home"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-home"
+                aria-selected="true"
+              >
+                Passenger
+              </button>
+              <button
+                class="nav-link nav-link-custom text-end rounded-3"
+                id="v-pills-profile-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-profile"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-profile"
+                aria-selected="false"
+              >
+                Commercial
+              </button>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 mb-3">
-            <form action="">
-              <div class="form-group">
-                <label for="" class="form-label">Pilih Jenis Pinjaman</label>
-                <select name="" id="" class="form-select">
-                  <option value=""></option>
-                </select>
+            <div class="tab-content" id="v-pills-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="v-pills-home"
+                role="tabpanel"
+                aria-labelledby="v-pills-home-tab"
+              >
+                <form action="">
+                  <div class="form-group">
+                    <label for="" class="form-label"
+                      >Pilih Jenis Pinjaman</label
+                    >
+                    <select name="" id="" class="form-select">
+                      <option value=""></option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="" class="form-label">Jumlah Pinjaman</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                  <div class="form-group">
+                    <label for="" class="form-label">Pilih Tenor</label>
+                    <select name="" id="" class="form-select">
+                      <option value=""></option>
+                    </select>
+                  </div>
+                  <button type="submit" class="btn-cta px-5">Hitung</button>
+                </form>
               </div>
-              <div class="form-group">
-                <label for="" class="form-label">Jumlah Pinjaman</label>
-                <input type="text" class="form-control" />
+              <div
+                class="tab-pane fade"
+                id="v-pills-profile"
+                role="tabpanel"
+                aria-labelledby="v-pills-profile-tab"
+              >
+                <form action="">
+                  <div class="form-group">
+                    <label for="" class="form-label"
+                      >Pilih Jenis Pinjaman</label
+                    >
+                    <select name="" id="" class="form-select">
+                      <option value=""></option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="" class="form-label">Jumlah Pinjaman</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                  <div class="form-group">
+                    <label for="" class="form-label">Pilih Tenor</label>
+                    <select name="" id="" class="form-select">
+                      <option value=""></option>
+                    </select>
+                  </div>
+                  <button type="submit" class="btn-cta px-5">Hitung</button>
+                </form>
               </div>
-              <div class="form-group">
-                <label for="" class="form-label">Pilih Tenor</label>
-                <select name="" id="" class="form-select">
-                  <option value=""></option>
-                </select>
-              </div>
-              <button type="submit" class="btn-cta px-5">Hitung</button>
-            </form>
+            </div>
           </div>
           <div class="col-md-6 col-lg-4 mb-3">
             <div class="card bg-yellow-ochre-light rounded-4">
@@ -361,7 +423,7 @@
             </div>
           </div>
           <div
-            class="row row-cols-3 row-cols-lg-6 row-cols-md-4 row-cols-sm-4 client-logo-style-01 align-items-center"
+            class="row row-cols-2 row-cols-lg-6 row-cols-md-4 row-cols-sm-4 client-logo-style-01 align-items-center"
           >
             <!-- start client logo item -->
             <div
@@ -561,14 +623,7 @@
       <!-- end section -->
 
       <!-- start section -->
-      <section
-        class="big-section position-relative"
-        style="
-          background: url('./assets/bg-cta.webp');
-          background-position: center;
-          background-size: cover;
-        "
-      >
+      <section class="big-section position-relative" id="cta-section">
         <div class="container">
           <div class="row align-items-center justify-content-center my-5">
             <div
@@ -604,7 +659,8 @@
                       href="#accordion-style-02-01"
                     >
                       <div class="panel-title">
-                        <span class="alt-font text-white d-inline-block"
+                        <span
+                          class="alt-font text-extra-large font-weight-500 text-white d-inline-block"
                           >Apa itu Take Over ?</span
                         >
                         <i class="text-white feather icon-feather-minus"></i>
@@ -637,7 +693,8 @@
                       href="#accordion-style-02-02"
                     >
                       <div class="panel-title">
-                        <span class="alt-font text-white d-inline-block"
+                        <span
+                          class="alt-font text-extra-large font-weight-500 text-white d-inline-block"
                           >Mengapa memilih istana sultan ?</span
                         >
                         <i
@@ -674,7 +731,8 @@
                       href="#accordion-style-02-03"
                     >
                       <div class="panel-title">
-                        <span class="alt-font text-white d-inline-block"
+                        <span
+                          class="alt-font text-extra-large font-weight-500 text-white d-inline-block"
                           >Apa saja produk istana sultan ?</span
                         >
                         <i
@@ -709,7 +767,8 @@
                       href="#accordion-style-02-04"
                     >
                       <div class="panel-title">
-                        <span class="alt-font text-white d-inline-block"
+                        <span
+                          class="alt-font text-extra-large font-weight-500 text-white d-inline-block"
                           >Apa itu mitra agen ?</span
                         >
                         <i

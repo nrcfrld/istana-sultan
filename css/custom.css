@@ -1,5 +1,7 @@
+html,
 body {
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 .hero-section-logo {
@@ -105,8 +107,8 @@ body {
 }
 
 .panel-hero-item img {
-  width: 80px;
-  height: 80px;
+  width: 64px;
+  height: 64px;
 }
 
 .custom-step-list {
@@ -221,9 +223,34 @@ body {
   text-transform: uppercase;
 }
 
-@media only sceen and (min-width: 768px) {
+#cta-section {
+  background: url("../assets/bg-cta.webp");
+  background-position: right bottom;
+  background-size: cover;
+}
+
+.nav-link.nav-link-custom {
+  color: #242426;
+}
+
+.nav-link.nav-link-custom.active {
+  background-color: #242426;
+}
+
+@media only screen and (min-width: 768px) {
   .section-label {
     padding: 24px 64px;
     font-size: 24px !important;
+  }
+
+  #cta-section {
+    background: url("../assets/bg-cta.webp");
+    background-position: left bottom;
+    background-size: cover;
+  }
+
+  .panel-hero-item img {
+    width: 80px;
+    height: 80px;
   }
 }
